@@ -6,10 +6,26 @@
     align-items: center;
 }
 
-.button(@radius) {
+.button(@radius, @color) {
     .flex();
-    padding: 2% 3%;
-    color: @porcelain;
+    padding: 3%;
+    color: @color;
     background-color: @btn-bg-color;
     border-radius: @radius;
+}
+
+.btn-hover() {
+    color: @btn-bg-color;
+    background-color: @porcelain;
+}
+
+.link-hover() {
+    transform: scale(1.4);
+    color: @link-color;
+}
+
+.photo-hover() {
+    transform: rotate(20deg) scale(1.2);
+    opacity: 60%;
+    transition: 1s ease-in;
 }
