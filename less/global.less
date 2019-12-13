@@ -22,6 +22,10 @@ h5 {
   color: @header-font-color;
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+
 h2 {
   font-size: 3.2rem;
 }
@@ -36,7 +40,14 @@ p {
 }
 
 .container {
-  max-width: 800px;
+  // max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+.main-content {
+  .flex();
+  flex-flow: column nowrap;
+  margin: auto;
+  max-width: 800px;
 }
