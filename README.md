@@ -33,14 +33,27 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    Adaptive design is meant to ensure your website looks good on the device it's being viewed on. The difference with a fully responsive design is that your website should flow from desktop to smaller views. An adaptive design typically "snaps" to the specified pixel size, but responsive designs are fluid and adapt to the screen regardless of the size.
 
 2. Describe what it means to be mobile first vs desktop first.
+    Mobile first means you design your website based on how it will look on a mobile device. Once you're satisfied with the mobile layout, you then introduce media queries to expand the design to fit larger views. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    By setting your html font size to 62.5%, this equates to 1rem = 10px. By doing this it allows for easier calculations when using rems for font sizing. 
+    The main reason you want to include this is because pixels are a fixed unit, but rems will automatically adjust based on the root html element. This allows for much easier scalability.
 
 4. How would you describe preprocessing to someone new to CSS?
+    Pre-processors are an alternative way to organize your CSS file and they typically include features not found in vanilla CSS.
+    Pre-processors allow you to use variables to store commonly used values, such as font colors. They also include a feature that allows you to condense your CSS into mixins. This feature lets you define values you may use often, for example:
+        Display: Flex;
+        Justify-Content: Center;
+        Align-Items: Center;
+    Instead of repeatedly typing the above out, you could store those values in a mixin called ".flex()". Now whenever you apply the .flex() mixin to a selector the listed values will apply.
+    Lastly, to allow for easier to navigate style-sheets, pre-processors allow you to create multiple files and import them into your main style-sheet. By breaking your CSS up in a modular fashion, it not only becomes easier to read, but easier to navigate and review.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    My favorite concept(s) in preprocessing would have to be nesting and importing style sheets. It makes everything much easier to read and navigate.
+    From what we've learned so far, I don't have trouble with any of the concepts.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
